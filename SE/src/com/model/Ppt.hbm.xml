@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-29 23:24:08 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.Ppt" table="PPT" catalog="se">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="path" type="java.lang.String">
+            <column name="PATH" length="100" not-null="true" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" length="50" not-null="true" />
+        </property>
+        <property name="date" type="java.lang.String">
+            <column name="DATE" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
